@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 type product = {
   image: string;
@@ -34,7 +35,7 @@ export default function Card() {
                   {item.title}
                 </h5>
               </a>
-
+              <Link to={`ShowDe/${id}`}></Link>
               <a href="#">
                 <img
                   className="rounded-t-lg w-5/12 flex justify-center items-center "
